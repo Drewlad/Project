@@ -4,21 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet"/>
+    <link rel="icon" type="image/png" href="Todolisticon.png">
     <title>To do list app</title>
 </head>
 <body>
     <div class="container">
         <h1><i>To do list app</i></h1>
-        <input placeholder="Enter your important tasks" id="input">
+        <input placeholder="Enter your important tasks" id="input" required>
+        <input type="time" id="inputt" required>
         <button id="button">ADD</button>
-        <h3>Never for get it again😊</h3>
+        <h3>Never for get it again😊</h3>  
     </div>
+        <img src="trash.png" alt="Delet all tasks" id="clear">
+<ul id="Task_container">
 
-
-
+</ul>
     <footer>
         <h5>Built by twilight👨‍💻© Join me in my journey on instagram <a href="https://www.instagram.com/code_with_twilight/">CODE_WITH_TWILIGHT</a></h5>
+        <h5 style="color: red; font-size: medium;">No part of this code should be used (copied) without my explicit agreement</h5>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
