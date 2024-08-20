@@ -1,86 +1,207 @@
 *{
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 a{
     text-decoration: none;
     color: black;
 }
-body{
-    background-color:hsla(180, 100%, 50%, 0.336)
-}
-.container{
-    border-radius: 5px;
-    border: 1px solid black;
+h1{
     text-align: center;
-    margin: 0;
-    padding: 10px 10px;
-    background-color: white;
-    width: 100%;
-    height: 25%;
+    font-family: fantasy;
 }
-#clear{
-    margin-top:5px;
-    float: right;
-    background-color: hsl(0, 0%, 50%);
-    width: 34px;
-    height: 34px;
-    border-radius: 50%;
+#img1{
+    background: none;
+    font-size:smaller;
+    border-radius: 100%;
 }
-#clear:hover{
-    background-color: hsl(0, 100%, 50%);
-}
-.delete{
-    animation-name: turn;
-    animation-duration: 1.5s;
-}
-@keyframes turn{
-    100%{transform: rotate(360deg);} 
- }
-.container input{
-    margin: 10px;
-    padding: 5px 10px;
-    font-style: italic;
-    font-weight: bolder;
-}
-.container button{
-    border-radius: 5px;
-    margin-left: 5px;
+#div1{
+    position: relative;
+    text-align: center;
+    background-color: hsl(199, 100%, 75%);
     border: none;
-    padding: 5px 5px;
-    background-color: hsl(120, 94%, 66%);
-    font-size: 20px;
-    cursor: pointer;
-}
-.tasks{
-    display: flex;
-    justify-content: space-evenly;
-    align-content: center;
-    align-items: center;
-    background-color:hsl(0, 0%, 100%);
-    font-style: italic;
-    font-weight: bolder;
     border-radius: 5px;
-    font-size: 20px;
+    margin-top: 20px;
+    margin: 20px;
+    align-content: center;
+    box-shadow: 5px 5px 10px gray;
+}
+#div1 label{
+    font-size: 1.5em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display:flex;
+    flex-direction: column;
+}
+#div1 input{
+    align-items: center;
+    text-align: center;
+    font-size: 1em;
+    display:inline-block;
+}
+#div1 button{
+    align-items: center;
+    border: none;
+    box-shadow: 0px 0px 10px gray;
+    border-radius: 2px;
+    font-size: 1.5em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#div1 button:hover{
+    background-color: hwb(0 50% 50%);
+}
+#div1 button:active{
+    background-color: hwb(0 50% 80%);
+}
+/*Register form footer */
+#h31{
+    text-align: center;
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#h32{
+    text-align: center;
     margin-top: 10px;
-    width: 100%;
-    padding: 10px 10px;
-    box-shadow: 0px 5px 10px;
-}
-.tasks~img{
-    margin-left: 5px;
-}
-img{
-    cursor: pointer;
+    font-style: italic;
 }
 footer{
-    background-color: white;
+    background-color: hsl(199, 100%, 73%);
     padding: 5px;
     width: 100%;
     bottom: 0;
-    position:fixed;
+    position:absolute;
     border-radius: 5px;
-    text-align: left;
+    text-align: center;
     font-size: 15px;
+}
+footer #p1{
+    text-align: left;
+    font-size: 12px;
+}
+/*Design of the main home page */
+.sidebar{
+    width: 10%;
+    float: left;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(0deg,hsl(180, 100%, 50%),hsl(0, 0%, 10%));
+    height: 100vh;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+}
+.sidebar div{
+    padding: 5px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.sidebar div:hover{
+    background: linear-gradient(20deg,hsl(180, 100%, 50%),hsl(0, 0%, 10%));
+}
+#navdiv{
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+#navdiv input:active{
+    color: black;
+}
+/*Design the chats and display of chats*/
+.Chats{
+    border: none;
+    border-radius: 15px;
+    display: flex;
+    background: linear-gradient(20deg,hsla(180, 100%, 50%, 0.336),hsla(0, 0%, 10%, 0.336));
+}
+.Chats h1{
+    text-align: left;
+    margin-left: 5px;
+}
+.Chats #navchat{
+    border: none;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+.Chats input{
+    text-align: right;
+    margin: 5px;
+}  
+#profile{
+    clear: both;
+}
+#chat_contact{
+    background-color: white;
+    height:100vh;
+    overflow-y: auto;
+}
+#chat_contact::-webkit-scrollbar{
+    width: 0px;
+}
+#chat_contact p{
+    display: flex;
+    flex-direction: row;
+}
+#chat_contact img{
+    float: right;
+}
+.chat_contact{
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 95px;
+    overflow: hidden;
+    margin-top: 4px;
+    background-color:hsl(0, 0%, 96%);
+    margin: 4px;
+}
+.chat_contact p{
+    margin: 5px;
+    float: left;
+    width:95%;
+}
+.chat_contact img{
+    justify-items: center;
+    max-width: 24px;
+    max-height: 24px;
+    float: right;
+    width: 5%;
+}
+.chat_contact img:hover{
+    background-color: hsl(0, 0%, 70%);
+}
+@media screen and (max-width: 600px) {
+    .sidebar {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        background-color: whitesmoke;
+        border-radius: 0px;
+        position: sticky;
+        width:100%;
+        height: fit-content;
+    }
+    .sidebar h4{
+        display: none;
+        justify-content: space-evenly;
+    }
+    .Chats{
+        clear: both; 
+        display: block;
+    }
+    .chat_contact p{
+        float: left;
+        margin: 5px;
+        width:90%;
+    }
+    .chat_contact img{
+        max-width: 24px;
+        max-height: 24px;
+        width: 10%;
+    }
 }
